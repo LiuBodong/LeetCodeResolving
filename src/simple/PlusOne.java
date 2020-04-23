@@ -12,9 +12,7 @@ package simple;
 public class PlusOne {
 
     public static void main(String[] args) {
-        int[] digits = new int[]{
-                1, 2, 3
-        };
+        int[] digits = new int[] { 1, 2, 3 };
         System.out.println(toString(plusOne2(digits)));
     }
 
@@ -29,6 +27,12 @@ public class PlusOne {
         return sb.toString();
     }
 
+    /**
+     * 第一种实现方式
+     * 
+     * @param digits 输入
+     * @return 输出
+     */
     public static int[] plusOne1(int[] digits) {
         int len = digits.length - 1;
         do {
