@@ -1,4 +1,4 @@
-package simple;
+package sdu.edu.simple;
 
 import java.util.Stack;
 

@@ -1,4 +1,4 @@
-package simple;
+package sdu.edu.simple;
 // 我们遇到什么困难也不要怕，微笑着面对他，消除恐惧的最好办法就是面对恐惧。坚持，才是胜利！加油！奥利给！
 
 /*

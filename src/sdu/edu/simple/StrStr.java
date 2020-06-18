@@ -1,4 +1,4 @@
-package simple;
+package sdu.edu.simple;
 
 /**
  * Author : 刘伯栋 Version : 1.0 Date : 2020年1月7日 下午10:37:10 Description :

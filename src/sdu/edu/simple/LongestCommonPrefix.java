@@ -1,4 +1,4 @@
-package simple;
+package sdu.edu.simple;
 
 /**
  * Author       刘伯栋
