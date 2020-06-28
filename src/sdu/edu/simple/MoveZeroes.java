@@ -6,7 +6,7 @@ import java.util.Collections;
  * Author:      刘伯栋
  * Time:        2020-06-18 22:22
  * Version:     1.0
- * Description: https://leetcode-cn.com/problems/move-zeroes/
+ * Description: httpcd s://leetcode-cn.com/problems/move-zeroes/
  */
 public class MoveZeroes {
 

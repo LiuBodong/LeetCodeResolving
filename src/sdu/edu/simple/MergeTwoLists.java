@@ -1,5 +1,7 @@
 package sdu.edu.simple;
 
+import sdu.edu.utils.ListNode;
+
 /**
  * Author       刘伯栋
  * Version      1.0
@@ -28,20 +30,6 @@ public class MergeTwoLists {
         while (res != null) {
             System.out.println(res);
             res = res.next;
-        }
-    }
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-
-        @Override
-        public String toString() {
-            return this.val + "";
         }
     }
 
