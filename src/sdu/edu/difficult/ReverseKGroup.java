@@ -1,6 +1,5 @@
 package sdu.edu.difficult;
 
-import sdu.edu.simple.ReverseList;
 import sdu.edu.utils.ListNode;
 
 /*

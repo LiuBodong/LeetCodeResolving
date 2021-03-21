@@ -1,7 +1,6 @@
 package sdu.edu.simple;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class NAryTreeLevelOrderTraversal {

@@ -17,15 +17,20 @@ public class Subsets {
 
     public static List<List<Integer>> subsets(int[] nums) {
 
-        List<List<Integer>> output = new ArrayList();
+        List<List<Integer>> output = new ArrayList<>();
         output.add(new ArrayList<Integer>());
 
         for (int num : nums) {
-            List<List<Integer>> newSubsets = new ArrayList();
+            List<List<Integer>> newSubsets = new ArrayList<>();
             for (List<Integer> curr : output) {
-                newSubsets.add(new ArrayList<Integer>(curr) {{
-                    add(num);
-                }});
+                newSubsets.add(new ArrayList<>(curr) {
+
+                    private static final long serialVersionUID = 1L;
+
+                    {
+                        add(num);
+                    }
+                });
             }
             for (List<Integer> curr : newSubsets) {
                 output.add(curr);

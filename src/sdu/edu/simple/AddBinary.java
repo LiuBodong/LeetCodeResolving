@@ -11,7 +11,7 @@ package sdu.edu.simple;
 public class AddBinary {
 
     public static void main(String[] args) {
-        System.out.println(0 ^ 0);
+        System.out.println(addBinary("1111", "1111"));
     }
 
     public static String addBinary(String a, String b) {
@@ -20,9 +20,36 @@ public class AddBinary {
         int lenb = b.length();
         int max = Math.max(lena, lenb);
         int n = 0;
-        for (int i = 0; i < max; i++) {
-
+        for (int i = 1; i <= max; i++) {
+            int aPos = lena - i;
+            int bPos = lenb - i;
+            int achar = aPos >= 0 ? (a.charAt(aPos) == '0' ? 0 : 1) : 0;
+            int bchar = bPos >= 0 ? (b.charAt(bPos) == '0' ? 0 : 1) : 0;
+            int r = 0;
+            switch (achar + bchar + n) {
+            case 0:
+                r = 0;
+                break;
+            case 1:
+                r = 1;
+                n = 0;
+                break;
+            case 2:
+                r = 0;
+                n = 1;
+                break;
+            case 3:
+                r = 1;
+                n = 1;
+                break;
+            default:
+                break;
+            }
+            sb.append(r);
         }
-        return sb.toString();
+        if (n > 0) {
+            sb.append(n);
+        }
+        return sb.reverse().toString();
     }
 }

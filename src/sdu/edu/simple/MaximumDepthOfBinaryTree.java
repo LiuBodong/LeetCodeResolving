@@ -1,7 +1,5 @@
 package sdu.edu.simple;
 
-import javax.swing.tree.TreeNode;
-
 // https://leetcode-cn.com/problems/minimum-depth-of-binary-tree
 public class MaximumDepthOfBinaryTree {
 
